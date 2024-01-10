@@ -1,0 +1,34 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        You are eligile to use the staff transfer service
+      </h1>
+
+      <h2 class="govuk-heading-m">Contact your vacancy holder</h2>
+      <p class="govuk-body">
+        You will receive an email with the sign in details for the new employee transfer service.
+      </p>
+      <p class="govuk-body">
+        You should <a href="#" class="govuk-link">sign into the service </a> and complete stage 1 of your transfer to start pre-employment checks.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}

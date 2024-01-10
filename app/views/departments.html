@@ -1,0 +1,244 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="departments-answer" method="post">
+
+        <p>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Is your transfer from one of these departments to another?
+                </h1>
+              </legend>
+
+              <br></br>
+
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Ministerial departments
+                  </span>
+                </summary>
+                <br></br>
+                        <div _ngcontent-icp-c5="" class="govuk-grid-row">
+                           <!---->
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Attorney General's Office</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Cabinet Office</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Business and Trade</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Culture, Media and Sport</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Education</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Energy Security and Net Zero</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Environment, Food and Rural Affairs</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Levelling Up, Housing and Communities</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Environment, Food and Rural Affairs</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Transport</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Work and Pensions</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department of Health and Social Care</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Foreign, Commonwealth and Development Office</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">HM Treasury</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Home Office</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Foreign, Commonwealth and Development Office</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Ministry of Defence</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Ministry of Justice</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Northern Ireland Office</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the Advocate General for Scotland</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the leader of the House of Commons</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the leader of the House of Lords</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the Secretary of State for Scotland</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the Secretary of State for Wales</div>
+                           <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">UK Export Finance</div>
+                        </div>
+                        <hr _ngcontent-icp-c5="" class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              </details>
+                       
+       
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Non-ministerial departments
+                  </span>
+                </summary>
+                <br></br>
+       
+                <div _ngcontent-icp-c5="" class="govuk-grid-row">
+                   <!---->
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Charity Commission</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Competition & Markets Authority</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Crown Prosecution Service</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">ESTYN</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Food Standards Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Energy Security and Net Zero</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Forestry Commission</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Government Actuary's Department</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Environment, Food and Rural Affairs</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Government Legal Department</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Department for Work and Pensions</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">HM Land Registry</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">HM Revenue and Customs</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">National Crime Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">NS&I</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office for National Statistics</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of Rail and Road</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">OFGEM</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Northern Ireland Office</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Ofqual</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the leader of the House of Commons</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Ofsted</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Serious Fraud Office</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Supreme Court of the United Kingdom</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">The National Archives</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">The Water Services Regulation Authority</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">UK Government Investments</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">UK Statistics Authority</div>
+                </div>
+                <hr _ngcontent-icp-c5="" class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              </details>
+       
+       
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Executive agencies
+                  </span>
+                </summary>
+                <br></br>
+       
+                <div _ngcontent-icp-c5="" class="govuk-grid-row">
+                   <!---->
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Animal and Plant Health Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Building Digital UK (BDUK)</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Centre for Environment, Fisheries and Aquaculture Science</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Companies House</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Criminal Injuries Compensation Authority</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Crown Commercial Service</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Defence Electronics & Components Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Defence Science and Technology Laboratory</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Driver and Vehicle Licensing Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Driver and Vehicle Standards Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Education and Skills Funding Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">FCDO Services</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Forest Research</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">GCHQ</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Government Internal Audit Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Government Property Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Her Majesty's Government Communications Centre</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">HM Courts and Tribunals Service</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">HM Prison & Probation Service</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Insolvency Service</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Ofsted</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Intellectual Property Office</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Legal Aid Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Maritime and Coastguard Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Medicines and Healthcare Products Regulatory Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Met Office</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">National Infrastructure Commission</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office of the Public Guardian</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">National Infrastructure Commission</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Planning Inspectorate</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Queen Elizabeth II Conference Centre</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Rural Payments Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">UK Debt Management Office</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">UK Hydrographic Office</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">UK Space Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Valuation Office Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Vehicle Certification Agency</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Veterinary Medicines Directorate</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Wilton Park</div>
+                </div>
+                <hr _ngcontent-icp-c5="" class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              </details>
+       
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                   Crown non-departmental public bodies
+                  </span>
+                </summary>
+                <br></br>
+       
+                <div _ngcontent-icp-c5="" class="govuk-grid-row">
+                   <!---->
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Advisory, Conciliation and Arbitration Service</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Health and Safety Executive</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Institute for Apprenticeships and Technical Education</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Office for Budget Responsibility</div>
+               </div>
+                <hr _ngcontent-icp-c5="" class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              </details>
+       
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                   Devolved administrations
+                  </span>
+                </summary>
+                <br></br>
+       
+                <div _ngcontent-icp-c5="" class="govuk-grid-row">
+                   <!---->
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Scottish Government</div>
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Welsh Government</div>
+               </div>
+                <hr _ngcontent-icp-c5="" class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              </details>
+       
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                   Other
+                  </span>
+                </summary>
+                <br></br>
+       
+                <div _ngcontent-icp-c5="" class="govuk-grid-row">
+                   <!---->
+                   <div _ngcontent-icp-c5="" class="govuk-body govuk-!-margin-bottom-3 govuk-grid-column-one-half">Government Office for Science</div>
+               </div>
+                <hr _ngcontent-icp-c5="" class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              </details>
+
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="selectDepartments" name="departments" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="isYourTransferPermananent">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="selectDepartments-2" name="departments" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="isYourTransferPermananent-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </p>
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
