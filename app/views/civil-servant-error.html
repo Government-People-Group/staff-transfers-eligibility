@@ -16,25 +16,43 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#areYouACivilServant">Select Yes or No</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <form class="form" action="/civil-servant-answer" method="post">
 
         <p>
-          <div class="govuk-form-group">
+          <div class="govuk-form-group govuk-form-group--error">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
                   Is the employee a civil servant?
                 </h1>
               </legend>
+              <p id="civil-servant-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Select Yes or No
+              </p>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="areYouACivilServant" name="civil-servant" type="radio"  value="yes">
+                  <input class="govuk-radios__input" id="areYouACivilServant" name="civil-servant" type="radio" value="yes">
                   <label class="govuk-label govuk-radios__label" for="areYouACivilServant">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="areYouACivilServant-2" name="civil-servant" type="radio"  value="no" >
+                  <input class="govuk-radios__input" id="areYouACivilServant-2" name="civil-servant" type="radio" value="no">
                   <label class="govuk-label govuk-radios__label" for="areYouACivilServant-2">
                     No
                   </label>
@@ -44,9 +62,9 @@
           </div>
         </p>
 
-        <button type="submit" class="govuk-button" data-module="govuk-button">
-          Continue
-        </button>
+        {{ govukButton({
+          text: "Continue"
+        }) }}
 
       </form>
 

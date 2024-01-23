@@ -16,16 +16,34 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#isYourTransferPermanent">Select Yes or No</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <form class="form" action="transfer-permanent-answer" method="post">
 
         <p>
-          <div class="govuk-form-group">
+          <div class="govuk-form-group govuk-form-group--error">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
                   Is the transfer to a new role permanent or on a loan of 6 months or more?
                 </h1>
               </legend>
+              <p id="civil-servant-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Select Yes or No
+              </p>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="isYourTransferPermanent" name="transfer-permanent" type="radio" value="yes">

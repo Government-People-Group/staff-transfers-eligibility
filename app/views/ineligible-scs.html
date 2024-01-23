@@ -1,0 +1,35 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Information based on your answers
+    </h1>
+
+    <p class="govuk-body">
+      Based on your answers, the employee is <strong>not eligible</strong> to use the transfer service.
+    </p>
+    <br>
+    <div class="app-c-result-card">
+      <h2 class="gem-c-heading govuk-heading-m   govuk-!-margin-bottom-2">
+        Senior civil servants(SCS)
+        </h2>
+      <div class="govuk-body app-c-result-card__description">
+      <p>If the employee is a senior civil servant(SCS), they do not use the transfer service.They should follow the instructions in the their provisional job offer.</p>
+      <p>If the employee has any queries, they should contact their vacancy holder. The vacancy holder's details will be provided in the job advert on <a href="https://www.civilservicejobs.service.gov.uk/csr/index.cgi" class="govuk-link">Civil Service Jobs</a>.
+      </p>
+      </div>
+      </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

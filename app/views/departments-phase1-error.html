@@ -1,0 +1,72 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+          <div class="govuk-error-summary" data-module="govuk-error-summary">
+            <div role="alert">
+              <h2 class="govuk-error-summary__title">
+                There is a problem
+              </h2>
+              <div class="govuk-error-summary__body">
+                <ul class="govuk-list govuk-error-summary__list">
+                  <li>
+                    <a href="#phase1">Select Yes or No</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+      <form class="form" action="/phase1-answer" method="post">
+
+        <p>
+          <div class="govuk-form-group govuk-form-group--error">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Is the transfer from one of these departments to another?
+                </h1>
+              </legend>
+              <p id="civil-servant-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Select Yes or No
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>Cabinet office</li>
+                <li>Department of Environment, Food and Rural affairs(Defra)</li>
+                <li>Department of work and Pensions(DWP)</li>
+              </ul>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="phase1" name="phase-1" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="phase1">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="phase1-2" name="phase-1" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="phase1-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </p>
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

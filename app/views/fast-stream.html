@@ -6,9 +6,9 @@
 
 {% block beforeContent %}
   {{ govukBackLink({
-  text: "Back",
-  href: "javascript:window.history.back()"
-}) }}
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
 {% endblock %}
 
 {% block content %}
@@ -16,26 +16,26 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form class="form" action="transfer-permanent-answer" method="post">
+      <form class="form" action="/fast-stream-answer" method="post">
 
         <p>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  Is the transfer to a new role permanent or on a loan of 6 months or more?
+                  Is the employee part of Civil Service Fast Stream?
                 </h1>
               </legend>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="isYourTransferPermanent" name="transfer-permanent" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="isYourTransferPermanent">
+                  <input class="govuk-radios__input" id="fastStream" name="fast-stream" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="fastStream">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="isYourTransferPermanent-2" name="transfer-permanent" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="isYourTransferPermanent-2">
+                  <input class="govuk-radios__input" id="fastStream-2" name="fast-stream" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="fastStream-2">
                     No
                   </label>
                 </div>
