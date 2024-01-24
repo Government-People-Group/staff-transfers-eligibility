@@ -1,0 +1,61 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="departments-answer" method="post">
+
+        <p>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Is your transfer from one of the departments to another on the list?
+                </h1>
+              </legend>
+
+              <div class="govuk-inset-text">
+                Check in the <a href="/list" target=”_blank” class="govuk-link">department list (Opens in a new tab)</a> to see if the departments you are looking for are available.If available select Yes else select No.
+              </div>
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="toandfromDepartments" name="departments" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="isYourTransferPermananent">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="toandfromDepartments-2" name="departments" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="isYourTransferPermananent-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </p>
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
